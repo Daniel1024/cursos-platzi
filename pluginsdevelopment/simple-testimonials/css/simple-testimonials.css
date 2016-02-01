@@ -1,0 +1,64 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300italic,500,700);
+
+.testimonial .text {
+    background: #282541;
+    border-top: 4px solid #3949A0;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+    color: #c7c6cd; 
+    font-family: 'Roboto', Verdana, Helvetica, Arial, sans-serif; 
+    position: relative;
+    padding: 30px 40px; 
+}
+
+.owl-carousel .owl-item:nth-child(even) .testimonial .text {
+    border-top: 4px solid #22EAB8;
+}
+
+.testimonial .text span {
+    font-size: 1.65em;
+    font-style: italic;
+    line-height: 1.5em;   
+}
+
+.testimonial .text:after {
+    content: "";
+    position: absolute;
+    bottom: -16px;
+    left: 50px;
+    border-width: 16px 0 0 16px;
+    border-style: solid;
+    border-color: #282541 transparent;;
+    display: block;
+    width: 0;
+}
+
+.testimonial .meta-info {    
+    margin-top: 25px;
+    text-align: center;
+}
+
+.testimonial .meta-info .thumbnail {
+    max-width: 25%;
+    border-radius: 100%;
+    margin: 15px auto;
+}
+
+.testimonial .meta-info p { 
+    color: #8582A5;    
+    font-family: 'Roboto', Verdana, Helvetica, Arial, sans-serif;   
+    margin: 0;
+}
+
+.testimonial .meta-info .name {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.testimonial .meta-info .job {
+    font-style: italic;
+}
+
+.owl-carousel .owl-item img.thumbnail {
+    width: auto;
+}

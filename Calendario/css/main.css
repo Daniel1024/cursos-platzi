@@ -1,0 +1,43 @@
+table {
+  background: #fff;
+  margin: 0 auto;
+}
+table .mesnum {
+  font-weight: normal;
+  font-size: 30px;
+}
+table .mes {
+  font-weight: normal;
+  font-size: 25px;
+}
+table .des {
+  font-weight: bold;
+}
+table td {
+  text-align: left;
+  vertical-align: top;
+}
+table table {
+  background: #fff;
+  font-weight: bold;
+  font-style: serif;
+  margin: 5px;
+}
+table table th {
+  text-align: center;
+  background: #808080;
+  width: 30px;
+  color: #fff;
+}
+table table td {
+  text-align: center;
+}
+table table .fn {
+  background: #008000;
+  color: #fff;
+  width: 30px;
+}
+table table .fb {
+  background: #ff0;
+  width: 30px;
+}

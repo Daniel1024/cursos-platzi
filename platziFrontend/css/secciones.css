@@ -1,0 +1,16 @@
+/* Secciones del sitio */
+
+.home {
+    background: #FFFFFF url('../assets/bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    text-align: center;
+    color: #FFFFFF;
+    box-sizing: border-box;
+}
+
+.full-height {
+    height: 100%;
+    padding: 20% 0;
+}
