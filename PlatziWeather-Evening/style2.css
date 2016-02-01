@@ -1,0 +1,112 @@
+html {
+  font-family: 'Ovo', sans-serif;
+  font-size: 110%;
+}
+
+@media all and (min-width: 400px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.main-header {
+  text-align: center;
+  background-color: #16210b;
+  color: white;
+  padding: 0.4em;
+}
+
+.main-header h1 {
+  margin: 0;
+  /*word-wrap: break-all;*/
+}
+
+.main-header h2 {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+/*@media screen and (max-width: 400px) {
+        .main-header {
+            background-color: olive;
+        }
+    }*/
+.card {
+  position: relative;
+  height: 30vh;
+  width: 100%;
+  background-size: cover;
+  color: white;
+  padding: 0.4em;
+  font-family: 'Megrim', cursive;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  justify-content: space-around;
+}
+
+.card--valencia {
+  background-image: url("img/valencia-small.jpg");
+}
+
+.card[data-city="mv"] {
+  background-image: url("img/mv.jpg");
+}
+
+.card__title {
+  margin: 0;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.card__Date {
+  font-size: .7rem;
+  margin: 0;
+  text-align: center;
+}
+
+/*
+    @media all and (min-width: 28em) {
+        .card {
+            background-image: url(img/valencia.jpg);
+            background-position: center;
+        }
+    }*/
+.card__info {
+  position: absolute;
+  bottom: 0.4em;
+  left: 0.4em;
+  text-align: center;
+}
+
+.card__image {
+  display: block;
+}
+
+.card__temp {
+  display: block;
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.card__maxt::before {
+  content: "Max: ";
+}
+
+.card__mint::before {
+  content: "Min: ";
+}
