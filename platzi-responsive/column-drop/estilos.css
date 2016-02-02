@@ -1,0 +1,63 @@
+body {
+  margin: 0 auto;
+  font-size: 16px;
+}
+
+nav {
+  background-color: #EEEEEE;
+  height: 64px;
+  line-height: 64px;
+}
+
+.container {
+  display: flex;
+  display: -webkit-flex;
+  flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+}
+
+.c1, .c2, .c3 {
+  width: 100%;
+}
+
+.c1 {
+  background-color: rgb(24, 115, 209);
+  height: 400px;
+}
+
+.c2 {
+  background-color: rgb(41, 63, 121);
+  height: 400px;
+}
+
+.c3 {
+  background-color: rgb(136, 154, 224);
+  height: 400px;
+}
+
+@media (min-width: 500px) {
+  .c1 {
+    width: 70%;
+    order: 2;
+    -webkit-order: 2;
+  }
+  .c2 {
+    width: 30%;
+    order: 1;
+    -webkit-order: 1;
+  }
+  .c3 {
+    width: 100%;
+    order: 3;
+    -webkit-order: 3;
+  }
+}
+
+@media (min-width: 800px) {
+  .c2, .c3 {
+    width: 25%;
+  }
+  .c1 {
+    width: 50%;
+  }
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Diferencia entre REM y EM</title>
+  <style>
+    body {
+      font-size: 16pt;
+    }
+
+    .c1, .c1-inner, .c2, .c2-inner {
+      padding: 1em;
+      border: 1px solid #000;
+    }
+
+    .c1 {
+      font-size: 1.5em;
+    }
+    .c1-inner {
+      font-size: 1.5em;
+    }
+
+    .c2 {
+      font-size: 1.5rem;
+    }
+    .c2-inner {
+      font-size: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="c1">
+    Esto es el contenedor 1
+    <div class="c1-inner">
+      Esto está dentro del contenedor 1
+    </div>
+  </div>
+
+  <div class="c2">
+    Esto es el contenedor 2
+    <div class="c2-inner">
+      Esto está dentro del contenedor 2
+    </div>
+  </div>
+</body>
+</html>
