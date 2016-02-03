@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Página</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- smoosh -->
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- endsmoosh -->
+</head>
+<body>
+    <header class="header">
+        <div class="header-mobile">
+            <h1 class="header-logo">Logo</h1>
+            <button id="btnMenu" class="header-btn-nav">
+                <i class="fa fa-bars"></i>
+            </button>
+        </div>
+        <nav class="header-menu-navbar">
+            <ul id="navbarMenu" class="header-menu-list">
+                <li class="header-menu-list-item">
+                    <a href="#">Inicio</a>
+                </li>
+                <li class="header-menu-list-item">
+                    <a href="#">Acerca de</a>
+                </li>
+                <li class="header-menu-list-item">
+                    <a href="#">Blog</a>
+                </li>
+                <li class="header-menu-list-item">
+                    <a href="#">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+<!--
+    <section>
+        <div class="video-container">
+            <video controls poster="">
+                <source src="./Instalacion-de-Laravel-5.mp4">
+            </video>
+        </div>
+    </section>
+-->
+    <article class="content">
+        <section class="content-text">
+            <div class="container">
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/al6iqn-cK_o" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-features">
+            <div class="container">
+                <div class="content-block">
+                    <h3 class="content-block-title">Feature 1</h3>
+                    <p>Lorem Ipsum</p>
+                </div>
+                <div class="content-block">
+                    <h3 class="content-block-title">Feature 2</h3>
+                    <p>Lorem Ipsum</p>
+                </div>
+                <div class="content-block">
+                    <h3 class="content-block-title">Feature 3</h3>
+                    <p>Lorem Ipsum</p>
+                </div>
+                <div class="content-block">
+                    <h3 class="content-block-title">Feature 4</h3>
+                    <p>Lorem Ipsum</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-text content-text-image">
+            <div class="container">
+                <picture>
+                    <source media="(min-width: 768px)" srcset="img/img01-desktop.jpg">
+                    <source media="(min-width: 320px)" srcset="img/img01-mobile-retina.jpg 2x">
+                    <img src="img/img01-mobile.jpg" alt="">
+                </picture>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe laboriosam dolor tempora, harum, neque nisi nemo possimus incidunt, numquam ab tenetur minus in illo fugit nulla. Unde quo, vitae sequi! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe laboriosam dolor tempora, harum, neque nisi nemo possimus incidunt, numquam ab tenetur minus in illo fugit nulla. Unde quo, vitae sequi!</p>
+            </div>
+        </section>
+    </article>
+    <!-- smoosh -->
+    <script src="./js/bundle.js"></script>
+    <!-- endsmoosh -->
+</body>
+</html>
