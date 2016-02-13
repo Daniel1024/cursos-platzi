@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: steelblue;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+
+[class^="cara-"] {
+  background: #333;
+  width: 120px;
+  height: 120px;
+  padding: 10px;
+  display: flex;
+  margin: 1em;
+  justify-content: space-between;
+}
+
+.cara-1 {
+  justify-content: center;
+  align-items: center;
+}
+
+.cara-2 .punto:nth-child(2) {
+  align-self: flex-end;
+}
+
+.cara-3 .punto:nth-child(2) {
+  align-self: center;
+}
+
+.cara-3 .punto:nth-child(3) {
+  align-self: flex-end;
+}
+
+.cara-5 > .punto {
+  align-self: center;
+}
+
+.columna {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.punto {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #eee;
+}
+
+footer {
+  padding-top: 3em;
+  text-align: center;
+}

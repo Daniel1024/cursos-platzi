@@ -429,6 +429,19 @@ body {
   min-height: 75vh;
 }
 
+#app-body .search-form {
+  margin: 0 auto 20px auto;
+  text-align: center;
+  font-size: 22px;
+}
+
+#app-body .search-form input[type="text"] {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: none;
+  width: 250px;
+}
+
 #app-footer {
   width: 100%;
   min-height: 10vh;
@@ -442,6 +455,15 @@ body {
   border-top: 1px solid #7f8c8d;
 }
 
+.tv-shows {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .tv-show {
   width: 100%;
   overflow: hidden;
@@ -451,6 +473,7 @@ body {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  box-sizing: border-box;
 }
 
 .tv-show:hover {
@@ -459,4 +482,19 @@ body {
 
 .tv-show .info {
   padding-left: 20px;
+}
+
+@media all and (max-width: 600px) {
+  .tv-show {
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .tv-show .info {
+    padding: 0 10px;
+    text-align: center;
+  }
 }

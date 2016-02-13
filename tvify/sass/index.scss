@@ -31,6 +31,18 @@ body {
     width: 80%;
     margin: 0 auto;
     min-height: 75vh;
+    .search-form {
+        //width: 60%;
+        margin: 0 auto 20px auto;
+        text-align: center;
+        font-size: 22px;
+        input[type="text"] {
+            padding: 10px 14px;
+            border-radius: 10px;
+            border: none;
+            width: 250px;
+        }
+    }
 }
 
 #app-footer {
@@ -45,6 +57,11 @@ body {
     }
 }
 
+.tv-shows {
+    display: flex;
+    flex-direction: column;
+}
+
 .tv-show {
     width: 100%;
     overflow: hidden;
@@ -52,6 +69,7 @@ body {
     background-color: white;
     margin-bottom: 16px;
     display: flex;
+    box-sizing: border-box;
     &:hover {
         background-color: #ecf0f1;
     }
@@ -61,5 +79,13 @@ body {
     }
     .info {
         padding-left: 20px;
+    }
+    @media all and (max-width: 600px) {
+        flex-direction: column;
+        align-items: center;
+        .info {
+            padding: 0 10px;
+            text-align: center;
+        }
     }
 }
